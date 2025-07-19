@@ -1,0 +1,51 @@
+.footer-section {
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+/* Social Icon Buttons */
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    width: 130px!important;
+    height: 45px;
+    border-radius: 10px;
+    font-size: 1.25rem!important;
+    text-decoration: none;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.icon-btn:hover {
+  background: linear-gradient(135deg, #218838);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(40, 167, 69, 0.4);
+  color: #fff;
+  z-index: 2;
+}
+
+/* Group hover animation (optional hover ripple effect) */
+.icon-group:hover .icon-btn {
+  transform: translateY(4px);
+}
+
+.icon-group .icon-btn:hover {
+  transform: translateY(-6px) !important;
+  z-index: 3;
+}
+
+/* Footer Quick Links Hover */
+.link-group .link-hover {
+  transition: all 0.35s ease-in-out;
+  display: inline-block;
+  color: inherit;
+}
+
+.link-group .link-hover:hover {
+  transform: translateY(-2px);
+  color: #ffc107 !important;
+  text-decoration: none;
+}

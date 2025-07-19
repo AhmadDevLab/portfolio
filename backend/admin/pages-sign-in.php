@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Responsive Admin Dashboard Template">
+        <meta name="keywords" content="admin,dashboard">
+        <meta name="author" content="stacks">
+        <!-- Remove Tap Highlight on Windows Phone IE -->
+        <meta name="msapplication-tap-highlight" content="no"/>
+        <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        
+        <!-- Title -->
+        <title>Alpha - Material Design Admin Template</title>
+
+        <!-- Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+        <link href="../assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="../assets/plugins/font-awesome/css/all.min.css" rel="stylesheet">
+        <link href="../assets/plugins/waves/waves.min.css" rel="stylesheet">
+
+      
+        <!-- Theme Styles -->
+        <link href="../assets/css/alpha.min.css" rel="stylesheet">
+        <link href="../assets/css/custom.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+    <body class="login-page sign-in">
+        <div class="loader">
+            <div class="spinner-border text-primary" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        
+     <div class="alpha-app">
+    <div class="container">
+        <div class="login-container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card login-box shadow-sm">
+                        <div class="card-body">
+                            <h4 class="card-title text-center mb-4">Admin Sign In</h4>
+
+                            <form action="admin_login_submit.php" method="POST">
+                                <div class="form-group mb-3">
+                                    <label for="email">Email Address</label>
+                                    <input type="email" name="email" id="email" class="form-control" placeholder="Enter email" required>
+                                </div>
+
+                                <div class="form-group mb-4">
+                                    <label for="password">Password</label>
+                                    <input type="password" name="password" id="password" class="form-control" placeholder="Enter password" required>
+                                </div>
+
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="signup.php" class="btn btn-outline-secondary">Sign Up</a>
+                                    <button type="submit" class="btn btn-primary">Sign In</button>
+                                </div>
+                            </form>
+
+                        </div> <!-- card-body -->
+                    </div> <!-- card -->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        
+        <!-- Javascripts -->
+        <script src="../assets/plugins/jquery/jquery-3.4.1.min.js"></script>
+        <script src="../assets/plugins/bootstrap/popper.min.js"></script>
+        <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+        <script src="../assets/plugins/waves/waves.min.js"></script>
+        <script src="../assets/plugins/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+        <script src="../assets/js/alpha.min.js"></script>
+    </body>
+</html>

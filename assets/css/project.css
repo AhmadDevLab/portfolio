@@ -1,0 +1,86 @@
+.github-card {
+  background-color: #1e1e1e;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #ffffff;
+  border: 1px solid #333;
+}
+
+.github-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 24px rgba(40, 167, 69, 0.35), 0 0 8px rgba(255, 193, 7, 0.25);
+}
+
+/* Icon Box Styling */
+.icon-box {
+  background: linear-gradient(135deg, #28a745, #c4b895);
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-box:hover {
+  transform: scale(1.08);
+}
+
+/* Badge Styling */
+.badge {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+/* App Buttons (Default) */
+.btn-outline-light {
+  border: 1px solid #fff;
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* App Buttons on Hover */
+.btn-outline-light:hover,
+.btn-outline-light:focus {
+  color: #28a745;              /* Green text on hover */
+  border-color: #28a745;       /* Green border */
+  background-color: transparent; /* Keep background transparent */
+  box-shadow: 0 0 6px rgba(40, 167, 69, 0.4); /* Soft green glow */
+}
+
+/* App Links Smooth Transition */
+a.btn {
+  transition: all 0.3s ease-in-out;
+}
+.tech-btn {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 50rem;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  color: #fff;
+}
+
+/* Green button */
+.btn-green {
+  background-color: #28a745;
+}
+
+.btn-green:hover {
+  background-color: #218838;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.3);
+}
+
+/* Yellow button */
+.btn-yellow {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.btn-yellow:hover {
+  background-color: #e0a800;
+  color: #000;
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+}

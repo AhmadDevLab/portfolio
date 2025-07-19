@@ -1,0 +1,129 @@
+/* ===============================
+   Custom CSS for Hero Section
+   =============================== */
+
+/* 🎨 Variables */
+:root {
+  --primary-color-custom: #28a745;           /* Green */
+  --highlight-color-custom: #ffc107;         /* Yellow */
+  --dark-bg-color: #171717;
+  --card-bg-color: #1f283e;
+  --text-color-light: #e0e0e0;
+  --border-color-custom: #28a745;            /* Green border */
+}
+
+/* 🌐 Base Styles */
+body {
+  font-family: 'Poppins', 'Manrope', sans-serif;
+  background-color: var(--dark-bg-color);
+  color: var(--text-color-light);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+/* 🔹 Primary Color Text */
+.text-primary-custom {
+  color: var(--primary-color-custom) !important;
+}
+
+/* 🔘 Button Styles */
+.btn-outline-primary-custom {
+  color: var(--primary-color-custom);
+  border-color: var(--primary-color-custom);
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary-custom:hover {
+  color: #000;
+  background-color: var(--highlight-color-custom); /* Yellow on hover */
+  border-color: var(--highlight-color-custom);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3); /* Yellow glow */
+}
+
+/* 🦸 Hero Section */
+.hero-section {
+  background-color: var(--dark-bg-color);
+  min-height: 100vh;
+  padding: 60px 0;
+}
+
+/* 📢 Headings */
+h1 {
+  font-size: 3.5rem;
+  line-height: 1.2;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.description-text {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 🧾 Card Highlights */
+.highlight-card {
+  background-color: #262626;
+  border: 1px solid var(--border-color-custom);
+  box-shadow: 0 8px 16px rgba(40, 167, 69, 0.3); /* Green shadow */
+}
+
+.highlight-card ul li {
+  font-size: 1.0rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.highlight-icon {
+  text-align: center;
+}
+
+.btn-radius-10 {
+  border-radius: 10px !important;
+}
+
+/* 🔁 Responsive Typography & Layout */
+@media (min-width: 576px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 4.5rem;
+  }
+  .description-text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-width: 992px) {
+  h1 {
+    font-size: 5rem;
+  }
+  .description-text {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .text-lg-start {
+    text-align: left !important;
+  }
+  .justify-content-lg-start {
+    justify-content: flex-start !important;
+  }
+}
+.btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: #000 !important;
+  border-color: #ffc107;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(255, 193, 7, 0.4);
+}

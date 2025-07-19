@@ -1,0 +1,121 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar height */
+.navbar {
+  height: 80px;
+}
+
+/* Navbar brand */
+.navbar-brand {
+  font-size: 1.3rem;
+  margin-right: auto;
+}
+.navbar .nav-link {
+  color: #fff !important;
+  transition: transform 0.3s ease, color 0.3s ease;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 14px;
+  padding: 6px 8px;
+  white-space: nowrap;
+}
+
+.navbar .nav-link i {
+  font-size: 20px;
+  margin-bottom: 2px;
+}
+
+.navbar .nav-link:hover {
+  transform: translateY(-3px);
+  color: #0bdf0b !important; /* yellow hover */
+}
+
+.navbar-brand {
+  color: #13b456 !important; /* Yellow brand text */
+  font-size: 1.5rem;
+}
+
+
+/* Responsive Nav: Always Inline */
+.navbar-nav {
+  flex-direction: row !important;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  justify-content: flex-end;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.navbar-nav::-webkit-scrollbar {
+  display: none;
+}
+
+/* Slide-menu override */
+.slide-menu {
+  all: unset;
+  display: flex !important;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+/* Hide toggle */
+.navbar-toggler {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    padding: 0.5rem 1rem;
+    height: auto;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .navbar .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.4rem;
+    margin-bottom: 0.3rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .navbar-nav {
+    flex-wrap: nowrap !important;
+    flex-direction: row !important;
+    justify-content: center;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    width: 100%;
+  }
+
+  .navbar-nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .navbar .nav-link {
+    font-size: 12px;
+    padding: 0px 0px;
+    white-space: nowrap;
+  }
+
+  .navbar .nav-link i {
+    font-size: 16px;
+  }
+}
